@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>EquiTable</title> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/styles.css"> 
+<script type="text/javascript" src="js/script.js"></script> 
+<script src="js/coderead.js"></script>
+</head> 
+<body onload="init()"> 
+    <h2>Equitable - Check your products for nestle</h2>
+    <div class="main">
+        <h4>Context : Nestle is a swiss company who owns almost half of existing food/cosmetics brands, but it has had it's lot of controversies, because <br> they dont respect human rights and steal resources from developping countries for exapmle by charging them for their own water. So, a lot of people including me have decided to boycott as they can the horrible brand. But as they own a lot of brands, it can be hard to know what products are from them and which are not so that's why i developped this tool where you can type in the barcode of a product and it will tell you if you can buy it or not.</h4>
+        <h3>Please insert EAN13 barcode value of the product to check if it comes from nestle</h3>
+        <input type="text" id="numb" name="id">
+        <button class="button-27" role="button" onclick="search()">Search</button>
+        <div class="spinner" id="spinner"></div>
+        <div id="name"></div>
+        <div class="cube animate__animated animate__shakeX" id="nestle">NESTLE PRODUCT</div>
+        <div class="cube animate__animated animate__tada" id="notNestle">NOT A NESTLE PRODUCT</div>
+    </div>
+    <p>Future updates : Add a link to all alternatives to a nestle product, fix the name of the product (doesnt show half of the time)</p>
+    <p>Thanks to <a href="openfoodfacts.org">OpenFoodFacts</a> for the API, to <a href="animate.style">animate.syle</a> for the css animations, <a href="https://getcssscan.com/css-buttons-examples">getcssscan.com</a> for the button and to <a href="https://csslayout.io/spinner/">csslayout.io</a> for the loading animation.</p>
+</body> 
+</html> 
